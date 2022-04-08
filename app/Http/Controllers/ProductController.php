@@ -229,7 +229,9 @@ class ProductController extends Controller
             }
             elseif ($request->shipping_type == 'flat_rate') {
                 $product->shipping_cost = $request->flat_shipping_cost;
+
                 $product->shipping_cost_outside = $request->shipping_cost_outside;
+
             }
             elseif ($request->shipping_type == 'product_wise') {
                 $product->shipping_cost = json_encode($request->shipping_cost);
@@ -578,7 +580,9 @@ class ProductController extends Controller
             }
             elseif ($request->shipping_type == 'flat_rate') {
                 $product->shipping_cost = $request->flat_shipping_cost;
+                
                 $product->shipping_cost_outside = $request->shipping_cost_outside;
+
             }
             elseif ($request->shipping_type == 'product_wise') {
                 $product->shipping_cost = json_encode($request->shipping_cost);

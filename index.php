@@ -4,6 +4,10 @@ ini_set('serialize_precision', -1);
 
 /**
  * Laravel - A PHP Framework For Web Artisans
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> 8e4b0cc (Server version)
  *
  * @package  Laravel
  * @author   Taylor Otwell <taylor@laravel.com>
@@ -12,8 +16,15 @@ ini_set('serialize_precision', -1);
 define('LARAVEL_START', microtime(true));
 
 /*
+<<<<<<< HEAD
 |--------------------------------------------------------------------------
 | Register The Auto Loader
+=======
+
+|--------------------------------------------------------------------------
+| Register The Auto Loader
+
+>>>>>>> 8e4b0cc (Server version)
 |--------------------------------------------------------------------------
 |
 | Composer provides a convenient, automatically generated class loader for
@@ -28,7 +39,11 @@ require __DIR__.'/vendor/autoload.php';
 /*
 |--------------------------------------------------------------------------
 | Turn On The Lights
+<<<<<<< HEAD
 |--------------------------------------------------------------------------
+=======
+|-------------------------------------------------------------------------- 
+>>>>>>> 8e4b0cc (Server version)
 |
 | We need to illuminate PHP development, so let us turn on the lights.
 | This bootstraps the framework and gets it ready for use, then it

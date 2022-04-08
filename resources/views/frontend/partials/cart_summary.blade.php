@@ -3,7 +3,9 @@
         <h3 class="fs-16 fw-600 mb-0">{{translate('Summary')}}</h3>
         <div class="text-right">
             <span class="badge badge-inline badge-primary">
+
                 {{ count($carts) }}
+
                 {{translate('Items')}}
             </span>
         </div>
@@ -47,9 +49,11 @@
                         $subtotal += $cartItem['price'] * $cartItem['quantity'];
                         $tax += $cartItem['tax'] * $cartItem['quantity'];
 
+
                         $product_shipping_cost = $cartItem['shipping_cost'];
 
                         $shipping += $product_shipping_cost;
+
 
                         $product_name_with_choice = $product->getTranslation('name');
                         if ($cartItem['variant'] != null) {

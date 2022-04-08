@@ -65,7 +65,7 @@ class LoginController extends Controller
                 $user = Socialite::driver('twitter')->user();
             } else {
                 $user = Socialite::driver($provider)->stateless()->user();
-                
+
             }
         } catch (\Exception $e) {
             flash("Something Went wrong. Please try again.")->error();

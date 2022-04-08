@@ -28,16 +28,20 @@
                                     <select class="form-control aiz-selectpicker" data-live-search="true" data-placeholder="{{ translate('Select your country') }}" name="country_id" required>
                                         <option value="">{{ translate('Select your country') }}</option>
                                         @foreach (\App\Models\Country::where('status', 1)->get() as $key => $country)
+
                                             <option {{ $country->name == 'Bangladesh' ? 'selected' : '' }} value="{{ $country->id }}">{{ $country->name }}</option>
+
                                         @endforeach
                                     </select>
                                 </div>
                             </div>
                         </div>
 
+
                         <div class="row">
                             <div class="col-md-2">
                                 <label>{{ translate('Division')}}</label>
+
                             </div>
                             <div class="col-md-10">
                                 <select class="form-control mb-3 aiz-selectpicker" data-live-search="true" name="state_id" required>
@@ -134,10 +138,12 @@
 @section('script')
     <script type="text/javascript">
 
+
         $(document).ready(function() {
             var country_id = $('[name=country_id]').val();
             get_states(country_id);
         });
+
 
         function add_new_address(){
             $('#new-address-modal').modal('show');
@@ -226,8 +232,8 @@
         }
     </script>
 
-
     @if (get_setting('google_map') == 1)
         @include('frontend.partials.google_map')
     @endif
 @endsection
+

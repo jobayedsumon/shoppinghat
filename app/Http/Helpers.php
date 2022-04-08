@@ -541,6 +541,7 @@ function getShippingCost($carts, $index)
         return 0;
     }
     else {
+
         if(get_setting('shipping_type') == 'product_wise_shipping') {
             $shipping_info = Address::where('id', $carts[0]['address_id'])->first();
             $city = City::where('id', $shipping_info->city_id)->first();
@@ -551,6 +552,12 @@ function getShippingCost($carts, $index)
             }
 
         }
+
+
+        if($product->is_quantity_multiplied && get_setting('shipping_type') == 'product_wise_shipping') {
+            return  $product->shipping_cost * $cartItem['quantity'];
+        }
+        return $product->shipping_cost;
 
     }
 }

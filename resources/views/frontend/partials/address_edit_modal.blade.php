@@ -29,7 +29,9 @@
 
         <div class="row">
             <div class="col-md-2">
+
                 <label>{{ translate('Division')}}</label>
+
             </div>
             <div class="col-md-10">
                 <select class="form-control mb-3 aiz-selectpicker" name="state_id" id="edit_state"  data-live-search="true" required>
@@ -108,4 +110,6 @@
             <button type="submit" class="btn btn-sm btn-primary">{{translate('Save')}}</button>
         </div>
     </div>
+
 </form>
+

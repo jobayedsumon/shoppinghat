@@ -395,6 +395,7 @@
 
                     <div class="flat_rate_shipping_div" style="display: none">
                         <div class="form-group row">
+<<<<<<< HEAD
                             <label class="col-md-6 col-from-label">{{translate('Shipping cost (Inside Dhaka)')}}</label>
                             <div class="col-md-6">
                                 <input type="number" lang="en" min="0" value="0" step="0.01"
@@ -410,6 +411,15 @@
                                        class="form-control" required>
                             </div>
                         </div>
+=======
+                            <label class="col-md-6 col-from-label">{{translate('Shipping cost')}}</label>
+                            <div class="col-md-6">
+                                <input type="number" lang="en" min="0" value="0" step="0.01"
+                                    placeholder="{{ translate('Shipping cost') }}" name="flat_shipping_cost"
+                                    class="form-control" required>
+                            </div>
+                        </div>
+>>>>>>> 8e4b0cc (Server version)
                     </div>
 
                     @else

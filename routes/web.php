@@ -1,5 +1,6 @@
 <?php
 
+
 use Illuminate\Notifications\Messages\MailMessage;
 
 Route::get('test-email-template', function() {
@@ -12,6 +13,7 @@ Route::get('test-email-template', function() {
 
     return view('emails.app_verification', ['array' => $array]);
 });
+
 
 /*
   |--------------------------------------------------------------------------
