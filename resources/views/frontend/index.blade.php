@@ -36,13 +36,6 @@
                 </div>
 
 
-        <div class="container">
-            <div class="row gutters-10 position-relative">
-                <div class="col-lg-2 position-static d-none d-lg-block" style="margin-top: -23px;">
-                    @include('frontend.partials.category_menu')
-                </div>
-
-
                 @php
                     $num_todays_deal = count($todays_deal_products);
                 @endphp
