@@ -74,7 +74,7 @@
                                                         <span class="fw-600 ml-2">{{ optional($address->city)->name }}</span>
                                                     </div>
                                                     <div>
-                                                        <span class="opacity-60">{{ translate('State') }}:</span>
+                                                        <span class="opacity-60">{{ translate('Division') }}:</span>
                                                         <span class="fw-600 ml-2">{{ optional($address->state)->name }}</span>
                                                     </div>
                                                     <div>

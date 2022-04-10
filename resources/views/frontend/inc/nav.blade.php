@@ -12,7 +12,7 @@
 <div class="top-navbar bg-gray py-1 z-1035">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col">
+            <div class="col-lg-5 col">
                 <ul class="list-inline d-flex justify-content-between justify-content-lg-start mb-0">
                     @if(get_setting('show_language_switcher') == 'on')
                     <li class="list-inline-item dropdown mr-3" id="lang-change">
@@ -65,21 +65,23 @@
                     @endif
 
 
-                        <li class="list-inline-item mr-3 border-right border-left-0 pr-3 pl-2">
+                        <li class="list-inline-item border-right border-left-0 pl-2">
                             <a href="mailto:support@shoppinghat.com" class="d-inline-block "
                                style="color: #000;">support@shoppinghat.com</a>
                         </li>
 
 
-                    <!--<li class="list-inline-item mr-3 border-right border-left-0 pr-3 pl-0">-->
-                    <!--        <a href="" class=" d-inline-block opacity-60 py-2">-->
-                    <!--            -->
-                    <!--            <span>0189382937</span>  -->
-                    <!--    </li>-->
+                        <li class="list-inline-item border-right border-left-0 d-flex">
+                            <span style="color: #ff0000;">
+                                Hotline:&nbsp;
+                            </span>
+                            <a href="tel:01714065971" class="d-inline-block"
+                               style="color: #ff0000;">01714065971</a>
+                        </li>
                 </ul>
             </div>
 
-            <div class="col-8 text-right d-none d-lg-block">
+            <div class="col-7 text-right d-none d-lg-block">
                 <ul class="list-inline mb-0 h-100 d-flex justify-content-end align-items-center">
                     @if (get_setting('helpline_number'))
                         <li class="list-inline-item mr-3 border-right border-left-0 pr-3 pl-0">
