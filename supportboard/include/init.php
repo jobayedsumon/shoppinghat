@@ -132,9 +132,8 @@ function sb_component_chat() {
     </div>
     <div class="sb-chat-btn">
         <span data-count="0"></span>
-        <span class="btn btn-primary">Live Chat</span>
-<!--        <img class="sb-icon" alt="" src="--><?php //echo $icon != '' ? $icon : SB_URL . '/media/button-chat.svg' ?><!--" />-->
-<!--        <img class="sb-close" alt="" src="--><?php //echo SB_URL ?><!--/media/button-close.svg" />-->
+        <img class="sb-icon" alt="" src="<?php echo $icon != '' ? $icon : SB_URL . '/media/button-chat.svg' ?>" />
+        <img class="sb-close" alt="" src="<?php echo SB_URL ?>/media/button-close.svg" />
     </div>
     <i class="sb-icon sb-icon-close sb-responsive-close-btn"></i>
     <?php if (sb_get_setting('chat-sound', 'n') != 'n') echo '<audio id="sb-audio" preload="auto"><source src="' . SB_URL . '/media/sound.mp3" type="audio/mpeg"></audio><audio id="sb-audio-out" preload="auto"><source src="' . SB_URL . '/media/sound-out.mp3" type="audio/mpeg"></audio>' ?>
