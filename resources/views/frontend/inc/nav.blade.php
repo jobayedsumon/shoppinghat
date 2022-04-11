@@ -76,11 +76,11 @@
 
 
                         <li class="list-inline-item border-right border-left-0 d-flex">
-                            <span style="color: #ff0000;">
+                            <span style="color: #000;">
                                 Hotline:&nbsp;
                             </span>
                             <a href="tel:01714065971" class="d-inline-block"
-                               style="color: #ff0000;">01714065971</a>
+                               style="color: #000;">01714065971</a>
                         </li>
                 </ul>
             </div>

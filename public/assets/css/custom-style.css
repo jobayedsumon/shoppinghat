@@ -321,8 +321,20 @@
  }
 }
 
-
-.color_box {
-height: 47vh;
+@media (max-width: 1599px) {
+    .color_box {
+        height: 47vh;
+    }
 }
+
+@media (min-width:  1600px) {
+    .color_box {
+        height: 32.5vh;
+    }
+}
+
+
+
+
+
 
