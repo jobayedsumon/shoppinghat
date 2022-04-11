@@ -325,11 +325,23 @@
     .color_box {
         height: 47vh;
     }
+    .mini-slider {
+            max-width: 8.33333333%
+    }
+    .main-slider {
+        max-width: 49.333333%
+    }
 }
 
 @media (min-width:  1600px) {
     .color_box {
         height: 32.5vh;
+    }
+    .mini-slider {
+        max-width: 14.166666661%
+    }
+    .main-slider {
+        max-width: 38.333333358%
     }
 }
 
