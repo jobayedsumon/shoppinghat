@@ -321,16 +321,13 @@
  }
 }
 
-/*@media(max-width: 1200px) {*/
-/*    .color_box {*/
-/*        height: 47vh;*/
-/*    }*/
-/*}*/
-/*@media(min-width: 1200px) {*/
-/*    .color_box {*/
-/*        height: 47vh;*/
-/*    }*/
-/*}*/
+@media(min-width: 1600px) {
+    .todays_deal {
+       width: 13.5%;
+       flex: 0 0 13.5%
+       ;max-width: 13.5%;
+    }
+}
 
 .color_box {
     height: 326px;

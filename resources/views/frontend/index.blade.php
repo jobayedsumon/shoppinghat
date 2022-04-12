@@ -9,7 +9,7 @@
 
             <div class="row">
 
-                <div class="d-none d-md-block col-1 p-0">
+                <div class="d-none d-md-block col-1 p-0" style="width: 14%; flex: 0 0 14%;max-width: 14%;">
 
                     <div class="aiz-carousel" data-autoplay="true">
 
@@ -30,7 +30,7 @@
 
                 </div>
 
-                <div class="d-none d-md-block col-2 p-0">
+                <div class="d-none d-md-block col-xl-1 col-lg-1 col-md-1 p-0">
                     @include('frontend.partials.category_menu')
                 </div>
 
@@ -91,7 +91,7 @@
 
 
                 @if($num_todays_deal > 0)
-                <div class="col-xl-2 col-lg-2 col-md-2 col-xs-12 col-sm-12  p-0">
+                <div class="col-xl-1 col-lg-1 col-md-1 col-xs-12 col-sm-12 todays_deal p-0">
                     <div class="bg-white shadow-sm">
                         <div class="bg-primary p-3 d-flex align-items-center justify-content-center">
 
@@ -142,7 +142,7 @@
                 @endif
 
 
-                <div class="d-none d-md-block col-1 p-0">
+                <div class="d-none d-md-block col-1 p-0" style="width: 14%;flex: 0 0 14%;max-width: 14%;">
                         <div class="aiz-carousel " data-autoplay="true">
 
                             <div class="carousel-box">
