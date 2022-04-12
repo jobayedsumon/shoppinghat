@@ -9,7 +9,7 @@
 
             <div class="row position-relative">
 
-                <div class="col-lg-1 p-0 mini-slider" >
+                <div class="col-1 p-0 mini-slider" >
                     <div class="d-none d-md-block">
                         <div class="aiz-carousel" data-autoplay="true">
 
@@ -31,7 +31,7 @@
 
                 </div>
 
-                <div class="col-lg-2 position-static d-none d-lg-block p-0" style="margin-top: -23px;">
+                <div class="col-1 position-static d-none d-lg-block p-0" style="margin-top: -23px;">
                     @include('frontend.partials.category_menu')
                 </div>
 
@@ -43,7 +43,7 @@
 
 
 
-                <div class="@if($num_todays_deal > 0) col-lg-4 @else col-lg-6 @endif p-0 main-slider">
+                <div class="@if($num_todays_deal > 0) col-7 @else col-9 @endif p-0 main-slider">
 
                     @if (get_setting('home_slider_images') != null)
                         <div class="aiz-carousel dots-inside-bottom mobile-img-auto-height" data-arrows="true" data-dots="true" data-autoplay="true">
@@ -145,7 +145,7 @@
                 @endif
 
 
-                <div class="col-lg-1 p-0 mini-slider">
+                <div class="col-1 p-0 mini-slider">
                     <div class="d-none d-md-block">
                         <div class="aiz-carousel " data-autoplay="true">
 
