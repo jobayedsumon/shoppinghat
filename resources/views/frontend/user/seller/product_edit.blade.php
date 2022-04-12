@@ -514,7 +514,7 @@
                         <label class="col-md-6 col-from-label">{{translate('Shipping cost (Outside Dhaka)')}}</label>
                         <div class="col-md-6">
                             <input type="number" lang="en" min="0" value="{{ $product->shipping_cost_outside }}" step="0.01"
-                                   placeholder="{{ translate('Shipping cost (Outside Dhaka)') }}" name="shipping_cost_outside"
+                                   placeholder="" name="shipping_cost_outside"
                                    class="form-control" required>
                         </div>
                     </div>
