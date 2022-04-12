@@ -9,7 +9,7 @@
 
             <div class="row position-relative">
 
-                <div class="col-1 p-0 mini-slider" >
+                <div class="col-2 p-0 mini-slider" >
                     <div class="d-none d-md-block">
                         <div class="aiz-carousel" data-autoplay="true">
 
@@ -43,7 +43,7 @@
 
 
 
-                <div class="@if($num_todays_deal > 0) col-7 @else col-9 @endif p-0 main-slider">
+                <div class="@if($num_todays_deal > 0) col-6 @else col-8 @endif p-0 main-slider">
 
                     @if (get_setting('home_slider_images') != null)
                         <div class="aiz-carousel dots-inside-bottom mobile-img-auto-height" data-arrows="true" data-dots="true" data-autoplay="true">
@@ -94,7 +94,7 @@
 
 
                 @if($num_todays_deal > 0)
-                <div class="col-lg-2  p-0">
+                <div class="col-2  p-0 todays_deal">
                     <div class="bg-white shadow-sm">
                         <div class="bg-primary p-3 d-flex align-items-center justify-content-center">
 
@@ -145,7 +145,7 @@
                 @endif
 
 
-                <div class="col-1 p-0 mini-slider">
+                <div class="col-2 p-0 mini-slider">
                     <div class="d-none d-md-block">
                         <div class="aiz-carousel " data-autoplay="true">
 
