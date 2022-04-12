@@ -7,11 +7,11 @@
 
         <div class="container-fluid">
 
-            <div class="row position-relative">
+            <div class="row">
 
-                <div class="col-2 p-0 mini-slider" >
-                    <div class="d-none d-md-block">
-                        <div class="aiz-carousel" data-autoplay="true">
+                <div class="d-none d-md-block col-1 p-0">
+
+                    <div class="aiz-carousel" data-autoplay="true">
 
                             <div class="carousel-box">
                                 <div class="color_box" style="background-color: #1977F3"></div>
@@ -27,11 +27,10 @@
                             </div>
 
                         </div>
-                    </div>
 
                 </div>
 
-                <div class="col-1 position-static d-none d-lg-block p-0" style="margin-top: -24px;">
+                <div class="d-none d-md-block col-2 p-0">
                     @include('frontend.partials.category_menu')
                 </div>
 
@@ -41,9 +40,7 @@
                 @endphp
 
 
-
-
-                <div class="@if($num_todays_deal > 0) col-6 @else col-8 @endif p-0 main-slider">
+                <div class="@if($num_todays_deal > 0) col-xl-6 col-lg-6 col-md-6 col-xs-12 col-sm-12 @else col-xl-8 col-lg-8 col-md-8 col-xs-12 col-sm-12 @endif p-0">
 
                     @if (get_setting('home_slider_images') != null)
                         <div class="aiz-carousel dots-inside-bottom mobile-img-auto-height" data-arrows="true" data-dots="true" data-autoplay="true">
@@ -94,7 +91,7 @@
 
 
                 @if($num_todays_deal > 0)
-                <div class="col-2  p-0 todays_deal">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-xs-12 col-sm-12  p-0">
                     <div class="bg-white shadow-sm">
                         <div class="bg-primary p-3 d-flex align-items-center justify-content-center">
 
@@ -145,8 +142,7 @@
                 @endif
 
 
-                <div class="col-2 p-0 mini-slider">
-                    <div class="d-none d-md-block">
+                <div class="d-none d-md-block col-1 p-0">
                         <div class="aiz-carousel " data-autoplay="true">
 
                             <div class="carousel-box">
@@ -163,7 +159,6 @@
                             </div>
 
                         </div>
-                    </div>
 
                 </div>
 

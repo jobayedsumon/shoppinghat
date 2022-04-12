@@ -321,35 +321,22 @@
  }
 }
 
-@media (max-width: 1599px) {
-    .color_box {
-        height: 47vh;
-    }
-    .mini-slider {
-            max-width: 8.33333333%
-    }
-    .todays_deal {
-        max-width: 8.33333333%;
-    }
-    /*.main-slider {*/
-    /*    max-width: 49.333333%*/
-    /*}*/
+/*@media(max-width: 1200px) {*/
+/*    .color_box {*/
+/*        height: 47vh;*/
+/*    }*/
+/*}*/
+/*@media(min-width: 1200px) {*/
+/*    .color_box {*/
+/*        height: 47vh;*/
+/*    }*/
+/*}*/
+
+.color_box {
+    height: 326px;
 }
 
-@media (min-width:  1600px) {
-    .color_box {
-        height: 35vh;
-    }
-    .mini-slider {
-        max-width: 14.166666661%
-    }
-     .todays_deal {
-        max-width: 13.33333333%
-    }
-    /*.main-slider {*/
-    /*    max-width: 38.333333358%*/
-    /*}*/
-}
+
 
 
 

@@ -1,4 +1,4 @@
-<div class="pr-0 py-4 rounded @if(Route::currentRouteName() == 'home') shadow-sm" @else shadow-lg" id="category-sidebar" @endif>
+<div class="pr-0 @if(Route::currentRouteName() == 'home') shadow-sm" @else shadow-lg" id="category-sidebar" @endif>
 
 
         <div class="cnav">
