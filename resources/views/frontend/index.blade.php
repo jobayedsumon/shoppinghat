@@ -2,7 +2,7 @@
 
 @section('content')
     {{-- Categories , Sliders . Today's deal --}}
-    <div class="home-banner-area  pt-3">
+    <div class="home-banner-area">
 
 
         <div class="container-fluid">
@@ -31,7 +31,7 @@
 
                 </div>
 
-                <div class="col-1 position-static d-none d-lg-block p-0" style="margin-top: -23px;">
+                <div class="col-1 position-static d-none d-lg-block p-0" style="margin-top: -24px;">
                     @include('frontend.partials.category_menu')
                 </div>
 
@@ -177,7 +177,7 @@
 
     {{-- Banner section 1 --}}
     @if (get_setting('home_banner1_images') != null)
-    <div class="mb-4">
+    <div>
         <div class="container">
             <div class="row gutters-10">
                 @php $banner_1_imags = json_decode(get_setting('home_banner1_images')); @endphp
@@ -219,7 +219,7 @@
 
     {{-- Banner Section 2 --}}
     @if (get_setting('home_banner2_images') != null)
-    <div class="mb-4">
+    <div>
         <div class="container">
             <div class="row gutters-10">
                 @php $banner_2_imags = json_decode(get_setting('home_banner2_images')); @endphp

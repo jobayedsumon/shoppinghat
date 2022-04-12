@@ -5,7 +5,7 @@
 @endphp
 
 @if (count($featured_products) > 0)
-    <section class="mb-4">
+    <section style="margin-top: -5px">
         <div class="container">
             <div class="px-2 py-4 px-md-4 py-md-3 bg-white shadow-sm rounded">
                 <div class="d-flex mb-3 align-items-baseline border-bottom">
@@ -22,5 +22,5 @@
                 </div>
             </div>
         </div>
-    </section>   
+    </section>
 @endif

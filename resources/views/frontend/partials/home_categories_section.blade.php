@@ -1,8 +1,8 @@
-@if(get_setting('home_categories') != null) 
+@if(get_setting('home_categories') != null)
     @php $home_categories = json_decode(get_setting('home_categories')); @endphp
     @foreach ($home_categories as $key => $value)
         @php $category = \App\Models\Category::find($value); @endphp
-        <section class="mb-4">
+        <section>
             <div class="container">
                 <div class="px-2 py-4 px-md-4 py-md-3 bg-white shadow-sm rounded">
                     <div class="d-flex mb-3 align-items-baseline border-bottom">
