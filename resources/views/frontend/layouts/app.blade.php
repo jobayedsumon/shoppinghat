@@ -20,7 +20,9 @@
 
     @yield('meta')
 
-    @if(!isset($detailedProduct) && !isset($customer_product) && !isset($shop) && !isset($page) && !isset($blog))
+    @if(!isset($detailedProduct) && !isset($customer_product) && !isset($shop) && !isset($page) && !isset($blog
+
+))
         <!-- Schema.org markup for Google+ -->
         <meta itemprop="name" content="{{ get_setting('meta_title') }}">
         <meta itemprop="description" content="{{ get_setting('meta_description') }}">
@@ -43,14 +45,11 @@
         <meta property="og:site_name" content="{{ env('APP_NAME') }}" />
         <meta property="fb:app_id" content="{{ env('FACEBOOK_PIXEL_ID') }}">
     @endif
-    <!-- Not required if jQuery is already loaded -->
-<script src="https://shoppinghat.com/supportboard/js/min/jquery.min.js"></script>
-<script id="sbinit" src="https://shoppinghat.com/supportboard/js/main.js"></script>
     <!-- Favicon -->
     <link rel="icon" href="{{ uploaded_asset(get_setting('site_icon')) }}">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+{{--    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">--}}
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="{{ static_asset('assets/css/vendors.css') }}">
@@ -60,9 +59,6 @@
     <link rel="stylesheet" href="{{ static_asset('assets/css/aiz-core.css') }}">
     <link rel="stylesheet" href="{{ static_asset('assets/css/custom-style.css') }}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-
 
     <script>
         var AIZ = AIZ || {};
@@ -199,7 +195,7 @@
                             </form>
                         </div>
                     @endif
-                    
+
                 </div>
             </div>
         </div>
@@ -263,10 +259,6 @@
     </script>
 
     <script>
-    
-             
-    
-    
 
         $(document).ready(function() {
             $('.category-nav-element').each(function(i, el) {
@@ -533,6 +525,8 @@
     @php
         echo get_setting('footer_script');
     @endphp
+
+    <script defer id="sbinit" src="https://shoppinghat.com/supportboard/js/main.js"></script>
 
 </body>
 </html>
