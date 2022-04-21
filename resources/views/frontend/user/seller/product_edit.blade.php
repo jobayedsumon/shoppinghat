@@ -123,7 +123,7 @@
 
                     <div class="form-group row">
                         <label class="col-md-3 col-form-label"
-                            for="signinSrEmail">{{translate('Gallery Images')}}</label>
+                            for="signinSrEmail">{{translate('Gallery Images')}}<small>(600x600)</small></label>
                         <div class="col-md-8">
                             <div class="input-group" data-toggle="aizuploader" data-type="image" data-multiple="true">
                                 <div class="input-group-prepend">
@@ -140,7 +140,7 @@
                     </div>
                     <div class="form-group row">
                         <label class="col-md-3 col-form-label" for="signinSrEmail">{{translate('Thumbnail Image')}}
-                            <small>(290x300)</small></label>
+                            <small>(300x300)</small></label>
                         <div class="col-md-8">
                             <div class="input-group" data-toggle="aizuploader" data-type="image">
                                 <div class="input-group-prepend">
