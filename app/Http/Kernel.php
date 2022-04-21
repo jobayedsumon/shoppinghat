@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\HtmlMinifier;
 use App\Http\Middleware\IsAdmin;
 use App\Http\Middleware\IsSeller;
 use App\Http\Middleware\IsUser;
@@ -25,6 +26,7 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         \App\Http\Middleware\TrustProxies::class,
+        \App\Http\Middleware\HtmlMinifier::class
     ];
 
     /**
@@ -78,6 +80,7 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        'HtmlMinifier' => \App\Http\Middleware\HtmlMinifier::class,
     ];
 
     /**
