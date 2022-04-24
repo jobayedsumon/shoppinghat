@@ -53,14 +53,14 @@
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="{{ static_asset('assets/css/vendors.css') }}">
-    @if(\App\Models\Language::where('code', Session::get('locale', Config::get('app.locale')))->first()->rtl == 1)
-    <link rel="stylesheet" href="{{ static_asset('assets/css/bootstrap-rtl.min.css') }}">
-    @endif
+{{--    @if(\App\Models\Language::where('code', Session::get('locale', Config::get('app.locale')))->first()->rtl == 1)--}}
+{{--    <link rel="stylesheet" href="{{ static_asset('assets/css/bootstrap-rtl.min.css') }}">--}}
+{{--    @endif--}}
     <link rel="stylesheet" href="{{ static_asset('assets/css/aiz-core.css') }}">
     <link rel="stylesheet" href="{{ static_asset('assets/css/custom-style.css') }}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script>
+    <script defer>
         var AIZ = AIZ || {};
         AIZ.local = {
             nothing_selected: '{{ translate('Nothing selected') }}',
@@ -87,26 +87,7 @@
     </script>
 
     <style>
-        body{
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 400;
-        }
-        :root{
-            --primary: {{ get_setting('base_color', '#e62d04') }};
-            --hov-primary: {{ get_setting('base_hov_color', '#c52907') }};
-            --soft-primary: {{ hex2rgba(get_setting('base_color','#e62d04'),.15) }};
-        }
-
-        #map{
-            width: 100%;
-            height: 250px;
-        }
-        #edit_map{
-            width: 100%;
-            height: 250px;
-        }
-
-        .pac-container { z-index: 100000; }
+        body{font-family:'Open Sans',sans-serif;font-weight:400}:root{--primary:{};}#edit_map{width:100%;height:250px}.pac-container{z-index:100000}
     </style>
 
 @if (get_setting('google_analytics') == 1)
@@ -123,7 +104,7 @@
 
 @if (get_setting('facebook_pixel') == 1)
     <!-- Facebook Pixel Code -->
-    <script>
+    <script defer>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
         n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -223,12 +204,12 @@
 
     <!-- SCRIPTS -->
     <script src="{{ static_asset('assets/js/vendors.js') }}"></script>
-    <script src="{{ static_asset('assets/js/aiz-core.js') }}"></script>
+    <script defer src="{{ static_asset('assets/js/aiz-core.js') }}"></script>
 
 
 
     @if (get_setting('facebook_chat') == 1)
-        <script type="text/javascript">
+        <script defer type="text/javascript">
             window.fbAsyncInit = function() {
                 FB.init({
                   xfbml            : true,
@@ -252,13 +233,13 @@
         </div>
     @endif
 
-    <script>
+    <script defer>
         @foreach (session('flash_notification', collect())->toArray() as $message)
             AIZ.plugins.notify('{{ $message['level'] }}', '{{ $message['message'] }}');
         @endforeach
     </script>
 
-    <script>
+    <script defer>
 
         $(document).ready(function() {
             $('.category-nav-element').each(function(i, el) {
